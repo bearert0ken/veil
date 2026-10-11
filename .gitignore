@@ -1,0 +1,13 @@
+# Veil runtime state (created on the user's machine, never committed)
+# The real journal lives at C:\ProgramData\Veil\ ; these catch any local copies.
+journal.json
+*.log
+*.tmp
+
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+.vs/
+.vscode/
+*.user

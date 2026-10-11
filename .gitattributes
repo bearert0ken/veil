@@ -1,0 +1,10 @@
+# Normalize line endings, but keep Windows CRLF in the working tree for scripts.
+* text=auto eol=crlf
+
+# The deGDID engine is pinned by SHA-256. It must keep its EXACT bytes across
+# clone/checkout on every OS, or the hash check will (correctly) refuse to run it.
+# -text tells git to treat it as binary: no line-ending conversion, ever.
+modules/gdid/engine/degdid.ps1 -text
+
+# Documentation can stay LF-friendly.
+*.md text eol=lf
